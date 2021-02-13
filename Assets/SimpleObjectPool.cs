@@ -21,7 +21,7 @@ public class SimpleObjectPool : MonoBehaviour
     {
 
         objectsToPool = new List<GameObject>();
-        stage = 5;//PlayerPrefs.GetInt("Stage", 1);
+        stage = PlayerPrefs.GetInt("Stage", 1);
 
         GameObject objectToCreate;
 

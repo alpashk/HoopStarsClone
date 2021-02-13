@@ -12,6 +12,9 @@ public class ScoreDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider collider)
     {
-        collider.gameObject.GetComponent<ScoreManager>().scoreGoal();
+        if (!collider.isTrigger)
+        {
+            collider.gameObject.GetComponent<ScoreManager>().scoreGoal();
+        }
     }
 }

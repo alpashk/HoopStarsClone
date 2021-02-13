@@ -10,20 +10,6 @@ public class PlayerControls : MonoBehaviour
         move = GetComponent<MovementScript>();
         PlayerInput.OnTap += GetInput;
     }
-
-    // Update is called once per frame
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            move.jump(-1);
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            move.jump(1);
-        }
-    }
-
     private void GetInput(int direction)
     {
         move.jump(direction);

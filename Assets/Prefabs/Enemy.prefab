@@ -275,6 +275,7 @@ GameObject:
   - component: {fileID: 8597101308418387328}
   - component: {fileID: 8597101308418387383}
   - component: {fileID: 8597101308418387382}
+  - component: {fileID: 2682368452155060501}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -428,6 +429,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyText: {fileID: 7581530677956266223, guid: c9349a561a3e946458cfc7afe6a44cff, type: 3}
   enemyFlag: {fileID: 7587428603128515766, guid: b81c1504965d76047966cc6632fc75ac, type: 3}
-  flagCount: 1
+  flagCount: 2
   flagOffset: 0.4
   yOffset: 0.6
+--- !u!65 &2682368452155060501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8597101308418387385}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.6, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
